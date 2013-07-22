@@ -2,25 +2,24 @@
 
 ## Abstract
 
+TileCubes are broken into two document types, the [Metadata][Metadata] and the [Tiles][Tiles]. The Metadata document describes the shared information across thee TileCube dataset. For each tile requested there is a Tile document returned that describes the data on that tile. 
 
 
-### Metadata
+## Metadata
 
+The TileCube Metadata document describes key tileset information, include zoom extents, pixel resolution, dimension names, and authors.
 
 #### Schema
 
-There are two TileCube structures defined based on the 
+## Tiles
 
-* [Single dimension][Single dimension] - for each pixel a set of events are reported, the event is binary but non-existence isn't reported
-* [Multi dimension][Multi dimension] - for each pixel a set of events are reported, for each event there is also a value reported
+### Single dimension tiles
 
-##### Single dimension
-
-
+#### Schema
 
 #### Content
 
-### Multi dimension
+### Multi dimension tiles
 
 #### Schema
 
