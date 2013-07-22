@@ -19,6 +19,7 @@ provider to begin serving TileCubes for rendering data on the web.
  * examples
  * interactivity
  * flexible dimension number
+   * In the future, data can be multidimensional (e.g. Month:Gender:AgeGroup), however V1.x is limited to Key:Value (e.g. Month:Gender, Month:AgeGroup)
 
 ## 1.0
 
