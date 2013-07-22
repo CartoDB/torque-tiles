@@ -51,7 +51,10 @@ The single dimension extends the core tile with pixel based values. A first seri
 	1, 4, 5, 9, # x coordinates
 	4, 5, 1, 3, # y coordinates
 	1, 1, 1, 2, # number of values in each pixel
-	2, 4, 1, 5, 4 # values
+	2, # value in the first pixel
+	4, # value in the second pixel
+	1, # value in the third pixel
+	5, 4 # values in the fourth pixel
 ]
 ```
 
