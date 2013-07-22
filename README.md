@@ -18,6 +18,7 @@ provider to begin serving TileCubes for rendering data on the web.
  * client
  * examples
  * interactivity
+ * flexible dimension number
 
 ## 1.0
 
@@ -44,5 +45,5 @@ the transfer of multidimensional data for maps.
 The authors of the draw upon two existing specifications to guide the
 development and publication of TileCubes,
 
-* [MBTiles](https://github.com/mapbox/mbtiles-spec)
-* [Tile Map Service](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
+* [MBTiles](https://github.com/mapbox/mbtiles-spec) Tile Map
+* [Service](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)

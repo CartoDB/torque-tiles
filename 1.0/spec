@@ -2,13 +2,25 @@
 
 ## Abstract
 
+
+
 ### Metadata
+
 
 #### Schema
 
+There are two TileCube structures defined based on the 
+
+* [Single dimension][Single dimension] - for each pixel a set of events are reported, the event is binary but non-existence isn't reported
+* [Multi dimension][Multi dimension] - for each pixel a set of events are reported, for each event there is also a value reported
+
+##### Single dimension
+
+
+
 #### Content
 
-### Tiles
+### Multi dimension
 
 #### Schema
 
