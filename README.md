@@ -1,6 +1,10 @@
 # TileCubes Specification
 
-TileCubes is a specification for transferring temporal or categorical geospatial data. TileCubes have been used in a number of production projects since 2011 without public documentation or description of their implementation. This specification is meant to allow any data service provider to begin serving TileCubes for rendering data on the web. 
+TileCubes is a specification for transferring temporal or categorical
+geospatial data. TileCubes have been used in a number of production
+projects since 2011 without public documentation or description of their
+implementation. This specification is meant to allow any data service
+provider to begin serving TileCubes for rendering data on the web.
 
 # Versions
 
@@ -21,7 +25,8 @@ TileCubes is a specification for transferring temporal or categorical geospatial
 
 # Concept
 
-TileCubes utilizes the client side resolution for rendering to optimize the transfer of multidimensional data for maps. 
+TileCubes utilizes the client side resolution for rendering to optimize
+the transfer of multidimensional data for maps.
 
 # Implementations
 
@@ -36,7 +41,8 @@ TileCubes utilizes the client side resolution for rendering to optimize the tran
 * Sandro Santilli (strk)
 * Tim Robertson (timrobertson100)
 
-The authors of the draw upon two existing specifications to guide the development and publication of TileCubes,
+The authors of the draw upon two existing specifications to guide the
+development and publication of TileCubes,
 
 * [MBTiles](https://github.com/mapbox/mbtiles-spec)
 * [Tile Map Service](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
