@@ -13,13 +13,13 @@ The TileCube Metadata document describes key tileset information, include zoom e
 TODO
 
 * tile type
-** core
-** single dimension with values
-** key value
+ * * core
+ * * single dimension with values
+ * * key value
 
 * pixel dimension description
-** how it is defined
-** how it changes x,y coordinates/offsets
+ * * how it is defined
+ * * how it changes x,y coordinates/offsets
 
 
 #### Schema
