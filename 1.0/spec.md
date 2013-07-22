@@ -80,25 +80,26 @@ This might be used to (e.g.) represent the year something happened (at each pixe
 
 #### Content
 
-### Multi dimension tiles
+### Key-value tiles
 
 #### Schema
 
+It is also possible to extend this, and encode key value pairs into a single tile.  
+This might be used to (e.g.) provide the number of events per month (at each pixel)
+
 ```json
 [
-  3, # three pixels have data
+  3,           # three pixels have data
   243, 12, 27, # x coordinates of pixels
-  246, 5, 122 # y coordinates of pixels
-  3, 1, 2, # number of dimension pairs found in each of the pixels
-  
-  1, 2, 3, # the values for the first dimension of pixel 1 (i.e. months Jan,Feb,Mar)
-  12, 2, 3, # the values for the second dimension of pixel 1 (i.e. Jan=12, Feb=2, Mar=3)
-  
-  11, # pixel 2 dimension 1
-  34, # pixel 2 dimension 2 (i.e. asserts that November=34)
-  
-  10, 12 # pixel 3 dimension 1
-  1, 127 # pixel 3 dimension 2
+  246, 5, 122  # y coordinates of pixels
+  3, 1, 2,     # number of dimension pairs found in each of the pixels
+  1, 2, 3,     # the values for the first dimension of pixel 1 (i.e. months Jan,Feb,Mar)
+  12, 2, 3,    # the values for the second dimension of pixel 1 (i.e. Jan=12, Feb=2, Mar=3)
+  11,          # pixel 2 dimension 1
+  34,          # pixel 2 dimension 2 (i.e. asserts that November=34)
+  10, 12       # pixel 3 dimension 1
+  1, 127       # pixel 3 dimension 2
 ]
 ```
+
 #### Content
