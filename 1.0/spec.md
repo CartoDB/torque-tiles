@@ -58,7 +58,7 @@ The single dimension extends the core tile with pixel based values. A first seri
 ]
 ```
 
-In the above example, just like our [core][Core tile] above, we report the number of pixels with events followed by the x coordinates and then the y coordinates. In the third row we list the number of values to expect in each pixel. So in this case, pixels 1-3 only have a single value. The last pixel has two values. In the final row, we list the value of each event. We see values 2, 4, 1 for pixels 1 through 3 respectively. Finally, for pixel 4, we see one value of 5 and a second value of 4.
+In the above example, just like our [core](Core tile) above, we report the number of pixels with events followed by the x coordinates and then the y coordinates. In the third row we list the number of values to expect in each pixel. So in this case, pixels 1-3 only have a single value. The last pixel has two values. In the final row, we list the value of each event. We see values 2, 4, 1 for pixels 1 through 3 respectively. Finally, for pixel 4, we see one value of 5 and a second value of 4.
 
 ##### Example
 
