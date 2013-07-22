@@ -17,9 +17,7 @@ TileCubes is a specification for transferring temporal or categorical geospatial
 
 ## 1.0
 
-* `name='format'` row **required** in `metadata` table.
-* `name='bounds'` row suggested in `metadata` table.
-* optional UTFGrid-based interaction spec.
+
 
 # Concept
 
@@ -37,3 +35,8 @@ TileCubes utilizes the client side resolution for rendering to optimize the tran
 * Javier de la Torre (jatorre)
 * Sandro Santilli (strk)
 * Tim Robertson (timrobertson100)
+
+The authors of the draw upon two existing specifications to guide the development and publication of TileCubes,
+
+* [MBTiles](https://github.com/mapbox/mbtiles-spec)
+* [Tile Map Service](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
