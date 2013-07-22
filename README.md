@@ -1,6 +1,6 @@
 # TileCubes Specification
 
-TileCubes is a specification for transferring temporal or categorical geospatial data. 
+TileCubes is a specification for transferring temporal or categorical geospatial data. TileCubes have been used in a number of production projects since 2011 without public documentation or description of their implementation. This specification is meant to allow any data service provider to begin serving TileCubes for rendering data on the web. 
 
 # Versions
 
@@ -10,7 +10,10 @@ TileCubes is a specification for transferring temporal or categorical geospatial
 
 ## Roadmap
 
- * 
+ * specification
+ * client
+ * examples
+ * interactivity
 
 ## 1.0
 
