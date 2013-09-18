@@ -8,7 +8,8 @@ provider to begin serving TileCubes for rendering data on the web.
 
 # Versions
 
-* **Development** - [1.0](https://github.com/andrewxhill/tilecubes/blob/master/1.0/spec.md)
+* **Development** - [1.0]
+  (https://github.com/andrewxhill/tilecubes/blob/master/1.0/spec.md)
 
 # Changelog
 
@@ -19,7 +20,10 @@ provider to begin serving TileCubes for rendering data on the web.
  * examples
  * interactivity
  * flexible dimension number
-   * In the future, data can be multidimensional (e.g. Month:Gender:AgeGroup), however V1.x is limited to Key:Value (e.g. Month:Gender) and Key:Value repetitions (e.g. Month:Gender, Month:AgeGroup)
+   * In the future, data can be multidimensional
+     (e.g. Month:Gender:AgeGroup), however V1.x is limited to Key:Value
+     (e.g. Month:Gender) and Key:Value repetitions (e.g. Month:Gender,
+     Month:AgeGroup)
 
 ## 1.0
 
