@@ -5,7 +5,7 @@
 TileCubes are JSON representations of multidimensional data with
 geospatial coordinates. TileCubes are broken into two document types,
 the Metadata and the Tiles. The Metadata document describes the shared
-information across thee TileCube dataset. For each tile requested there
+information across the TileCube dataset. For each tile requested there
 is a Tile document returned that describes the data on that tile.
 
 TileCubes are referenced on the [Tile Map Service Specification]
@@ -13,7 +13,7 @@ TileCubes are referenced on the [Tile Map Service Specification]
 and are currently restricted to [global-mercator]
 (http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-mercator).
 Coordinates within a TileCube are measured in pixel offsets from the
-boarder and assume 256x256 pixel tiles.
+border and assume 256x256 pixel tiles.
 
 ## Metadata
 
