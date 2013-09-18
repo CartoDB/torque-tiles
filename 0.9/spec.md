@@ -2,13 +2,23 @@
 
 ## Abstract
 
-TileCubes are JSON representations of multidimensional data with geospatial coordinates. TileCubes are broken into two document types, the Metadata and the Tiles. The Metadata document describes the shared information across thee TileCube dataset. For each tile requested there is a Tile document returned that describes the data on that tile. 
+TileCubes are JSON representations of multidimensional data with
+geospatial coordinates. TileCubes are broken into two document types,
+the Metadata and the Tiles. The Metadata document describes the shared
+information across thee TileCube dataset. For each tile requested there
+is a Tile document returned that describes the data on that tile.
 
-TileCubes are referenced on the [Tile Map Service Specification](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification) and are currently restricted to [global-mercator](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-mercator). Coordinates within a TileCube are measured in pixel offsets from the boarder and assume 256x256 pixel tiles. 
+TileCubes are referenced on the [Tile Map Service Specification]
+(http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
+and are currently restricted to [global-mercator]
+(http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-mercator).
+Coordinates within a TileCube are measured in pixel offsets from the
+boarder and assume 256x256 pixel tiles.
 
 ## Metadata
 
-The TileCube Metadata document describes key tileset information, include zoom extents, pixel resolution, dimension names, and authors.
+The TileCube Metadata document describes key tileset information,
+include zoom extents, pixel resolution, dimension names, and authors.
 
 TODO
 
@@ -18,7 +28,10 @@ TODO
 
 ## Tiles
 
-Tiles are required to contain a core set of information to be rendered, that information includes the number of pixels with data, and the x and y values for each pixel. From that core schema, TileCubes can be extended to facilitate more advanced datasets
+Tiles are required to contain a core set of information to be rendered,
+that information includes the number of pixels with data, and the x and
+y values for each pixel. From that core schema, TileCubes can be extended
+to facilitate more advanced datasets
 
 ### Single dimension with values
 
@@ -58,8 +71,9 @@ The single dimension extends the core tile with pixel based keys.
 
 #### Schema
 
-It is also possible to extend this, and encode key value pairs into a single tile.  
-This might be used to (e.g.) provide the number of events per month (at each pixel)
+It is also possible to extend this, and encode key value pairs into a
+single tile.  This might be used to (e.g.) provide the number of events
+per month (at each pixel)
 
 ```json
 [
