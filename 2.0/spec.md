@@ -1,12 +1,12 @@
-# TorqueTiles 1.0
+# TorqueTiles 2.0
 
 ## Abstract
 
-TorqueTiles are JSON representations of multidimensional data with
-geospatial coordinates. TorqueTiles are broken into two document types,
+TorqueTiles are a JSON representation of multidimensional data with
+geospatial coordinates. TorqueTiles are broken into two document types:
 the Metadata and the Tiles. The Metadata document describes the shared
 information across the TileCube dataset. For each tile requested there
-is a Tile document returned that describes the data on that tile.
+is a Tile document returned that describes the data in that tile.
 
 TorqueTiles are referenced on the [Tile Map Service Specification]
 (http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
@@ -18,9 +18,9 @@ border and assume 256x256 pixel tiles.
 
 ## Metadata
 
-The TorqueMap Metadata document describes key tileset information, it includes:
+The TorqueMap Metadata document describes key tileset information. It includes:
 
-- time  range information (start, end)
+- time range information (start, end)
 - number of steps (integer)
 - pixel resolution: power of two (1/4, 1/2,... 2, 4, 16)
 - column_type: "integer" or "date" (not mandatory)
@@ -44,7 +44,7 @@ The TorqueMap Metadata document describes key tileset information, it includes:
 }
 ```
 
-this is how current time can be extracted from the current step, translate and steps:
+The following equation shows how the current time can be extracted from the current step, translate and steps:
 
 ```
 current_time = start  + step * (end - start)/steps;
@@ -72,28 +72,31 @@ for tiles:
     http://host.com/{z}/{x}/{y}.torque.[json|bin]
     ```
 
-### tile format
+### Tile format
 
-tile format has two encoding formats, json and binary
+The tile format has two encodings:
 
-#### json
-it's a list fo objects with this format:
++ JSON 
++ Binary
 
- - x: x pixel coordinate in tile system reference (int)
- - y: y pixel coordinate in tile system reference (int)
- - steps: time slots when this pixel is **active**, there is data at that time
- - values: values for each time slot
+#### JSON
+A list of objects with this format:
+
+ - x__uint8: x pixel coordinate in tile system reference (unsigned integer, 8 bit)
+ - y__uint8: y pixel coordinate in tile system reference (unsigned integer, 8 bit)
+ - date__uint16: list of time slots when this pixel is **active** (i.e., there is data at that time) (unsigned integer, 16 bit)
+ - vals__uint8: list of values corresponding to each time slot (unsigned integer, 8 bit)
 
 ```
 [
     {
-        x: 25,
-        y: 77,
-        values: [ 1, 10 ],
-        steps: [214, 215]
+        x__uint8: 25,
+        y__uint8: 77,
+        vals__uint8: [ 1, 10],
+        date__uint16: [214, 215]
     },
 ...
 ]
 ```
 
-#### binary
+#### Binary
