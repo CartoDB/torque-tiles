@@ -36,8 +36,8 @@ the transfer of multidimensional data for maps.
 
 # Implementations
 
-* GBIF Link
-* CartoDB Link
+* GBIF
+* [CartoDB](http://cartodb.com)'s [Torque](https://github.com/CartoDB/torque) -- temporal maps
 
 # Authors
 
