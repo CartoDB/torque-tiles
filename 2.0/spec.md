@@ -62,15 +62,15 @@ to facilitate more advanced datasets
 
 for metadata:
 
-    ```
+
     http://host.com/medatada.torque.json
-    ```
+
 
 for tiles:
 
-    ```
+
     http://host.com/{z}/{x}/{y}.torque.[json|bin]
-    ```
+
 
 ### tile format
 
