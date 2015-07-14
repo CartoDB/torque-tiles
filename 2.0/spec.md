@@ -96,3 +96,18 @@ it's a list fo objects with this format:
 ```
 
 #### binary
+
+```
+[
+    {
+        x__uint8: 19,
+        y__uint8: 30,
+        vals__uint8: [
+            1
+        ],
+        dates__uint16: [
+            225
+        ]
+    }
+]
+```
