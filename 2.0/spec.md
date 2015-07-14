@@ -44,12 +44,19 @@ The TorqueMap Metadata document describes key tileset information, it includes:
 }
 ```
 
-this is how current time can be extracted from the current step, translate and steps:
+## Using the Metadata
+
+### Choosing a resolution
+
+TileCubes are typically rendered on tiles of 256x256 pixel tiles. It is therefore recommended that you choose a scale that will render along the borders of the 256x256
+
+### Extracting current time
+
+You can extracted from the ```current step```, ```translate``` and ```steps```:
 
 ```
 current_time = translate.start  + step * (translate.end - translate.start)/data_steps;
 ```
-
 
 ## Tiles
 
