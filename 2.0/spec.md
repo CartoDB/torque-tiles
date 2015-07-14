@@ -47,7 +47,7 @@ The TorqueMap Metadata document describes key tileset information, it includes:
 this is how current time can be extracted from the current step, translate and steps:
 
 ```
-current_time = start  + step * (end - start)/steps;
+current_time = translate.start  + step * (translate.end - translate.start)/data_steps;
 ```
 
 
