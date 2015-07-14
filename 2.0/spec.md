@@ -55,22 +55,21 @@ current_time = start  + step * (end - start)/steps;
 
 Tiles are required to contain a core set of information to be rendered,
 that information includes the number of pixels with data, and the x and
-y values for each pixel. From that core schema, TorqueTiles can be extended
-to facilitate more advanced datasets
+y values for each pixel. 
 
 ### tile url schema
 
 for metadata:
 
-
-    http://host.com/medatada.torque.json
-
+```
+http://host.com/medatada.torque.json
+```
 
 for tiles:
 
-
-    http://host.com/{z}/{x}/{y}.torque.[json|bin]
-
+```
+http://host.com/{z}/{x}/{y}.torque.[json|bin]
+```
 
 ### tile format
 
