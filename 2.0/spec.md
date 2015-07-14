@@ -20,15 +20,19 @@ border and assume 256x256 pixel tiles.
 
 The TorqueMap Metadata document describes key tileset information, it includes:
 
-- time  range information (start, end)
-- number of steps (integer)
-- pixel resolution: power of two (1/4, 1/2,... 2, 4, 16)
-- column_type: "integer" or "date" (not mandatory)
+- **translate**: time range span information (start, end); in the "time" column
+- **data_steps**: number of steps (integer)
+- **resolution**: pixel resolution power of two (1/4, 1/2,... 2, 4, 16); the scale from 256x256 pixels
+- **column_type**: "integer" or "date" (not mandatory)
+- **minzoom**: minimum zoom level
+- **maxzoom**: max zoom level
+- **tiles**: tile array for this set
+- **bounds**: [bounding box](http://wiki.openstreetmap.org/wiki/Bounding_Box) for tileset
 
 ```
 {
-    translate: [start, end], # span in the "time" column
-    resolution: 2            # resolution is the scale from 256x256 pixels
+    translate: [start, end], 
+    resolution: 2           
     # scale: 1/resolution,
     data_steps: 365,
     column_type: "number"
