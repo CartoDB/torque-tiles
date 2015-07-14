@@ -121,6 +121,10 @@ it's a list fo objects with this format:
 
 ## Using the Tile
 
+### Using values
+
+The maximum value allowed in the ```values``` attribute is **255**
+
 ### Extracting current time
 
 You can extracted from the ```current step```, ```translate``` and ```steps```:
