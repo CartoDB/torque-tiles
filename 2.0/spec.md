@@ -101,6 +101,8 @@ it's a list fo objects with this format:
 
 #### binary
 
+[See here](./example.json)
+
 ```
 [
     {
