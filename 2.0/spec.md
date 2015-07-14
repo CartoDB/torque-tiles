@@ -21,8 +21,8 @@ border and assume 256x256 pixel tiles.
 The TorqueMap Metadata document describes key tileset information, it includes:
 
 - **translate**: time range span information (start, end); in the "time" column
-- **data_steps**: number of steps (integer)
 - **resolution**: pixel resolution power of two (1/4, 1/2,... 2, 4, 16); the scale from 256x256 pixels
+- **data_steps**: number of steps (integer)
 - **column_type**: "integer" or "date" (not mandatory)
 - **minzoom**: minimum zoom level
 - **maxzoom**: max zoom level
@@ -48,20 +48,12 @@ The TorqueMap Metadata document describes key tileset information, it includes:
 }
 ```
 
-## Using the Metadata
-
-### Choosing a resolution
-
-TileCubes are typically rendered on tiles of 256x256 pixel tiles. It is therefore recommended that you choose a scale that will render perfectly along the borders of the 256x256 tile, otherwise rendering artificats are often introducted. The possible pixel resolutions are,
-```1, 2, 4, 8, 16, 32, 64, 128, 256```
-
-### Extracting current time
-
-You can extracted from the ```current step```, ```translate``` and ```steps```:
+this is how current time can be extracted from the current step, translate and steps:
 
 ```
 current_time = translate.start  + step * (translate.end - translate.start)/data_steps;
 ```
+
 
 ## Tiles
 
