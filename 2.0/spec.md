@@ -23,11 +23,11 @@ The TorqueMap Metadata document describes key tileset information, it includes:
 - **translate**: time range span information (start, end); in the "time" column
 - **resolution**: pixel resolution power of two (1/4, 1/2,... 2, 4, 16); the scale from 256x256 pixels
 - **data_steps**: number of steps (integer)
-- **column_type**: "integer" or "date" (not mandatory)
-- **minzoom**: minimum zoom level
-- **maxzoom**: max zoom level
-- **tiles**: tile array for this set
-- **bounds**: [bounding box](http://wiki.openstreetmap.org/wiki/Bounding_Box) for tileset
+- **column_type**: "integer" or "date", default "integer"
+- **minzoom**: minimum zoom level, optional
+- **maxzoom**: max zoom level, optional
+- **tiles**: tile array for this set, mandatory
+- **bounds**: [bounding box](http://wiki.openstreetmap.org/wiki/Bounding_Box) for tileset, optional
 
 ```
 {
@@ -39,10 +39,10 @@ The TorqueMap Metadata document describes key tileset information, it includes:
     "minzoom": 0,
     "maxzoom": 11,
     "tiles": [
-        'http://a.host.com/{z}/{x}/{y}.png',
-        'http://b.host.com/{z}/{x}/{y}.png',
-        'http://c.host.com/{z}/{x}/{y}.png',
-        'http://d.host.com/{z}/{x}/{y}.png'
+        'http://a.host.com/{z}/{x}/{y}.torque.json',
+        'http://b.host.com/{z}/{x}/{y}.torque.json',
+        'http://c.host.com/{z}/{x}/{y}.torque.json',
+        'http://d.host.com/{z}/{x}/{y}.torque.json'
     ],
     "bounds": [ -180, -85.05112877980659, 180, 85.0511287798066 ]
 }
@@ -78,9 +78,6 @@ http://host.com/{z}/{x}/{y}.torque.[json|bin]
 
 ### tile format
 
-tile format has two encoding formats, json and binary
-
-#### json
 it's a list fo objects with this format:
 
  - x: x pixel coordinate in tile system reference (int)
@@ -100,28 +97,16 @@ it's a list fo objects with this format:
 ]
 ```
 
-#### binary
-
-```
-[
-    {
-        x__uint8: 19,
-        y__uint8: 30,
-        vals__uint8: [
-            1
-        ],
-        dates__uint16: [
-            225
-        ]
-    }
-]
-```
-
 ## Using the Tile
 
-### Using values
+### Extract the pixel position
 
-The maximum value allowed in the ```values``` attribute is **255**
+``x`` and ``y`` are in range [0, 256/resolution] so to get the final pixel position (based on 256x256 tiles) the following math should be used:
+
+```
+pixel_x = x * resolution
+pixel_y = y * resolution
+```
 
 ### Extracting current time
 
