@@ -27,7 +27,7 @@ The TorqueMap Metadata document describes key tileset information, it includes:
 - **minzoom**: minimum zoom level, optional
 - **maxzoom**: max zoom level, optional
 - **tiles**: tile array for this set, mandatory
-- **bounds**: [bounding box](http://wiki.openstreetmap.org/wiki/Bounding_Box) for tileset, opcional
+- **bounds**: [bounding box](http://wiki.openstreetmap.org/wiki/Bounding_Box) for tileset, optional
 
 ```
 {
