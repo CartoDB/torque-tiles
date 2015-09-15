@@ -24,8 +24,8 @@ The TorqueMap Metadata document describes key tileset information, it includes:
 - **resolution**: pixel resolution power of two (1/4, 1/2,... 2, 4, 16); the scale from 256x256 pixels
 - **data_steps**: number of steps (integer)
 - **column_type**: "integer" or "date", default "integer"
-- **minzoom**: minimum zoom level, opcional
-- **maxzoom**: max zoom level, opcional
+- **minzoom**: minimum zoom level, optional
+- **maxzoom**: max zoom level, optional
 - **tiles**: tile array for this set, mandatory
 - **bounds**: [bounding box](http://wiki.openstreetmap.org/wiki/Bounding_Box) for tileset, opcional
 
