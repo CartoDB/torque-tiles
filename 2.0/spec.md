@@ -39,10 +39,10 @@ The TorqueMap Metadata document describes key tileset information, it includes:
     "minzoom": 0,
     "maxzoom": 11,
     "tiles": [
-        'http://a.host.com/{z}/{x}/{y}.json',
-        'http://b.host.com/{z}/{x}/{y}.json',
-        'http://c.host.com/{z}/{x}/{y}.json',
-        'http://d.host.com/{z}/{x}/{y}.json'
+        'http://a.host.com/{z}/{x}/{y}.torque.json',
+        'http://b.host.com/{z}/{x}/{y}.torque.json',
+        'http://c.host.com/{z}/{x}/{y}.torque.json',
+        'http://d.host.com/{z}/{x}/{y}.torque.json'
     ],
     "bounds": [ -180, -85.05112877980659, 180, 85.0511287798066 ]
 }
