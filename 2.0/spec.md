@@ -20,18 +20,20 @@ border and assume 256x256 pixel tiles.
 
 The TorqueMap Metadata document describes key tileset information, it includes:
 
-- **translate**: time range span information (start, end); in the "time" column
+- **start**: start time, in steps or unix timestamp
+- **end**: end time, in steps or unix timestamp
 - **resolution**: pixel resolution power of two (1/4, 1/2,... 2, 4, 16); the scale from 256x256 pixels
 - **data_steps**: number of steps (integer)
 - **column_type**: "integer" or "date", default "integer"
 - **minzoom**: minimum zoom level, optional
 - **maxzoom**: max zoom level, optional
-- **tiles**: tile array for this set, mandatory
+- **tiles**: tile array for this set, required
 - **bounds**: [bounding box](http://wiki.openstreetmap.org/wiki/Bounding_Box) for tileset, optional
 
 ```
 {
-    translate: [start, end], 
+    start: 0,
+    end: 100, 
     resolution: 2           
     # scale: 1/resolution,
     data_steps: 365,
@@ -107,6 +109,8 @@ it's a list fo objects with this format:
 pixel_x = x * resolution
 pixel_y = y * resolution
 ```
+
+The coordinate origin for Torque tiles is the **bottom left corner**.
 
 ### Extracting current time
 
