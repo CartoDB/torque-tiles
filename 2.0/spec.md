@@ -64,23 +64,14 @@ Tiles are required to contain a core set of information to be rendered,
 that information includes the number of pixels with data, and the x and
 y values for each pixel. 
 
-### tile url schema
-
-for metadata:
-
-```
-http://host.com/medatada.torque.json
-```
-
-for tiles:
+### Tile URL schema
 
 ```
 http://host.com/{z}/{x}/{y}.torque.[json|bin]
 ```
 
-### tile format
-
-it's a list fo objects with this format:
+### Tile format
+Each Torque tile is a JSON document containing an array, each of whose elements represents a point within the tile, notated using the following format:
 
  - x: x pixel coordinate in tile system reference (int)
  - y: y pixel coordinate in tile system reference (int)
