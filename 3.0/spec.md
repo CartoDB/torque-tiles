@@ -1,4 +1,4 @@
-# TorqueTiles 2.0
+# TorqueTiles 3.0
 
 ## Abstract
 
@@ -131,3 +131,6 @@ current_time = translate.start  + step * (translate.end - translate.start)/data_
 ### Encoding categories
 
 The ```vals``` column can be used to store 
+
+## Binary transport
+To be done
