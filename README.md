@@ -8,8 +8,11 @@ provider to begin serving TileCubes for rendering data on the web.
 
 # Versions
 
+* **Release** - [2.0]
+  (https://github.com/CartoDB/tilecubes/blob/master/2.0/spec.md)
 * **Development** - [1.0]
   (https://github.com/andrewxhill/tilecubes/blob/master/1.0/spec.md)
+
 
 # Changelog
 
